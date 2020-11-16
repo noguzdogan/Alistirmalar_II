@@ -1,3 +1,6 @@
+# int to list ve list to int mümkün olmadığı için kod bloğu biraz uzamış olabilir.
+# Ama o işlemlerin de açıklama satırlarını ekledim.
+# Fonksiyonun true döndürmesi onun süper asal olduğunu ifade ediyor.
 def super_asal(x):
     bolen = 0
     if x % 2 == 1 and x > 9: # 2 hariç tüm asal sayılar tek sayı olduğundan bu şart var
