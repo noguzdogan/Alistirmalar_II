@@ -28,5 +28,4 @@ for n in range(1000,10000):
     n1 = n # İlk değeri saklıyorum
     if super_asal(n) == True:
         print(n1,end=" ")
-
         
