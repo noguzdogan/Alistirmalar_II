@@ -1,5 +1,5 @@
 import random
-sinir = input("Oyunu kaç kez oynamak istediğinizi giriniz: ")
+sinir = input("Oyunu kaç kez oynamak istediğinizi giriniz: ") # Kullanıcı oyunu kaç kez oynamak istediğini belirler
 while sinir.isdigit() == False: # Kullanıcı sınırı sayıyla ifade etmek zorundadır.
     sinir = input("Lütfen bir sayıyla ifade ediniz: ")
 sinir = int(sinir) # While döngüsünde kullanabilmemiz için int'e çevirmemiz gerekir.
