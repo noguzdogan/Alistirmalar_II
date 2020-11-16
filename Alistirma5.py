@@ -1,4 +1,3 @@
-# Bir sonuç döndürmüyor, hata da vermiyor (Yanlışımı fark edersem düzelticem)
 def super_asal(x):
     bolen = 0
     if x % 2 == 1 and x > 9: # 2 hariç tüm asal sayılar tek sayı olduğundan bu şart var
@@ -17,7 +16,7 @@ def super_asal(x):
             return super_asal(x)
         else:
             return False
-    elif x in [2,3,5,7] == True:
+    elif (x in [2,3,5,7]) == True:
         return True
     else:
         return False
@@ -26,5 +25,3 @@ for n in range(1000,10000):
     n1 = n # İlk değeri saklıyorum
     if super_asal(n) == True:
         print(n1,end=" ")
-    
-    
