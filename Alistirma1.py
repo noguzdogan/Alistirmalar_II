@@ -1,3 +1,4 @@
+# Teşekkür ederim Mete arkadaşım :) <3
 import random
 sinir = input("Oyunu kaç kez oynamak istediğinizi giriniz: ") # Kullanıcı oyunu kaç kez oynamak istediğini belirler
 while sinir.isdigit() == False: # Kullanıcı sınırı sayıyla ifade etmek zorundadır.
