@@ -11,18 +11,14 @@ while sayac < sinir:
         girdi = input("Lütfen iki basamaklı ve her iki basamağı da farklı rakamlardan oluşan bir sayı seçiniz: ")
     else:
         girdi = input("\nŞimdi tekrar bir sayı giriniz: ")
-    if girdi.isdigit() == True and len(girdi) == 2 and girdi[0] != 0 and girdi[0] != girdi[1]: # Girdinin istenen tüm özellikleri bunlar
+    if girdi.isdigit() == True and len(girdi) == 2 and girdi[0] != 0 : # Girdinin istenen tüm özellikleri bunlar
         sayi = str(random.randint(10,98))
         while sayi[0] == sayi[1]: # Basamakların aynı olması durumu
             sayi = str(random.randint(10,98))
         print("Programın seçtiği sayı: ",sayi) # Programın doğru çalışıp çalışmadığını kontrol etmek için var
-        if girdi[0] == sayi[0]:
+        if girdi[0] == sayi[0] or girdi[-1] == sayi[-1]:
             dogruyer += 1
-        elif girdi[-1] == sayi[-1]:
-            dogruyer += 1
-        elif girdi[0] == sayi[-1]:
-            yanlisyer += -1
-        elif girdi[-1] == sayi[0]:
+        elif girdi[0] == sayi[-1] or girdi[-1] == sayi[0]:
             yanlisyer += -1
         sayac += 1 # Kullanıcı sayıyı yanlış girdiğinde sayaç devreye girmez yani sınırın sayacı ancak doğru veriyle çalışır.
     else:
